@@ -1,10 +1,11 @@
+/* reset body */
 body{
     margin: 0;
     padding: 0;
     background-color: #21262d;
     font-family: 'Roboto', sans-serif;
 }
-
+/* reset link style */
 a{
     color: #000;
     text-decoration: none;
@@ -13,27 +14,29 @@ a{
     font-family: 'Roboto', sans-serif;
     transition: 0.5s;
 }
-
 a:hover{
     color: royalblue ; 
 }
 
+/* reset unordered list style */
 ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
+/* .dropdown list style */
 .dropdown{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .dropdown .select{
     color : #000 ; 
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
     background-color: #00FA9A;
     width: 600px;
     display: flex;
@@ -42,7 +45,6 @@ ul{
     padding: 15px;
     border-radius: 25px;
     cursor: pointer;
-    /* margin: auto; */
 }
 
 .dropdown .select:hover{
@@ -53,8 +55,6 @@ ul{
 .options{
     background-color: #00FA9A;
     width: 600px;
-    /* max-height: 200px; */
-    /* overflow: scroll; */
     padding: 10px;
     border-radius: 25px;
     margin-top : 10px ; 
@@ -76,16 +76,19 @@ ul{
     transition: 0.5s;
 }
 
-
+/* add this class to options when you want to show the options */
 .active{
     display: flex;
 }
+
 
 .dropdown .options li{
     margin-top : 10px ; 
     cursor: pointer;
 }
 
+
+/* problem list style  */
 .problems{
     display: flex;
     justify-content: center;
@@ -118,6 +121,7 @@ ul{
     display: none;
 }
 
+/* input box for handle style */
 .handle_input{
     display : flex ; 
     justify-content: center;
@@ -136,6 +140,7 @@ ul{
     padding: 5px;
 }
 
+/* reset input style */
 .handle_input input:focus{
     outline : none ;
 }
@@ -156,4 +161,71 @@ ul{
 .handle_input .submit:hover{
     color : royalblue ; 
     transition: 0.5s;
+}
+
+
+
+
+/* media query for responsive design */
+
+@media(max-width : 700px){
+    .handle_input input{
+        width : 300px ; 
+        height: 15px;
+        font-size: 15px;
+    }
+
+    .dropdown .select{
+        width: 400px;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .dropdown .options{
+        width: 400px;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .problems{
+        width: 400px;
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width : 460px){
+    .handle_input input{
+        width : 200px ; 
+        font-size: 10px;
+    }
+
+    .dropdown .select{
+        width: 300px;
+        font-size: 10px;
+        padding: 7px;
+    }
+
+    .dropdown .options{
+        width: 300px;
+        font-size: 10px;
+        padding: 7px;
+    }
+
+    .problems{
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .problems div{
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .handle_input .submit{
+        width : 50px ; 
+        height : 20px ;
+        font-size: 10px;
+        line-height: 20px;
+    }
 }
