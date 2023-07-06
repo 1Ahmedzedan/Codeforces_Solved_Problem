@@ -37,7 +37,7 @@ ul{
     color : #000 ; 
     font-weight: bold;
     font-size: 20px;
-    background-color: #00FA9A;
+    background-color: #B4CDA1;
     width: 600px;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ ul{
 }
 
 .options{
-    background-color: #00FA9A;
+    background-color: #B4CDA1;
     width: 600px;
     padding: 10px;
     border-radius: 25px;
@@ -110,7 +110,7 @@ ul{
     height: 50px;
     width: 100%;
     text-align: center;
-    background-color: #00FA9A;
+    background-color: #B4CDA1;
     margin : 3px ;
     line-height: 50px; 
     border : black solid 2px ;
@@ -153,7 +153,7 @@ ul{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    background-color: #00FA9A;
+    background-color: #B4CDA1;
     text-align: center;
     line-height: 30px;
 }
